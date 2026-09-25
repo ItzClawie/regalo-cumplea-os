@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="description" 
+        content="Te quiero mucho Jossy linda, que sepas que lo hice con cariño"
+    >
+    <title>Feliz Cumpleaños ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pixel-background" class="pixel-background" aria-hidden="true">
+        <div class="moon"></div>
+        <div id="stars" class="stars"></div>
+        <div id="particles" class="particles"></div>
+    </div>
+    <main id="birthday-experience">
+        <section
+            id="screen-start"
+            class="screen active"
+            data-screen="0"
+            aria-labelledby="start-title"
+        >
+            <div class="screen-content start-content">
+                <p class="game-label">Player 1 · NEW ADVENTURE</p>
+                <div class="pixel-heart large-heart" aria-hidden="true">♥</div>
+                <h1 id="start-title">Feliz Cumpleaños</h1>
+                <p class="birthday-name">
+                    Para <span data-birthday-name>Tohru, Torito, Jossy, Mi niña</span>
+                </p>
+                <button id="start-button" class="pixel-button start-button" type="button">
+                    <span aria-hidden="true">▶</span>
+                    START
+                </button>
+                <p class="press-message">PRESIONA START</p>
+            </div>
+        </section>
+        <section
+            id="screen-letter"
+            class="screen"
+            data-screen="1"
+            aria-labelledby="letter-title"
+            hidden
+        >
+            <div class="screen-content">
+                <header class="section-header">
+                    <p class="game-label">NEW MESSAGE</p>
+                    <h2 id="letter-title">Una carta para ti</h2>
+                    <p class="section-subtitle">A letter for you</p>
+                </header>
+                <div class="story-layout">
+                    <figure class="pixel-frame photo-frame">
+                        <img src="assets/images/foto1.png" alt="Una de las fotos que más me gustan de ti ♥">
+                        <figcaption>♥ Mi niña bella ♥</figcaption>
+                    </figure>
+                    <article class="pixel-panel letter-panel">
+                        <span class="panel-label">MESSAGE 25/09</span>
+                        <p id="first-letter" data-typewriter>
+                            Feliz Cumpleaños Torito, quiero desearte felices 23, cada segundo, minuto, hora, día, semana, mes, te aprecio
+                            más, solo quiero decir que desde que te conoci y empezamos a hablar, me he sentido muy unido a ti, tu
+                            personalidad es lo que más me gusta, como te expresas como lo que dices y actuas te hacen unica y especial
+                            para mi, si hablamos fisicamente me gustaron, me gusta, y me gustaran mas esos ojitos lo repito pero esos
+                            ojitos me tienen embobado es que son muy muy hermososo esos diamantes que tienes de ojitos. Te quiero mucho
+                            mucho que no te imaginas lo tanto que te quiero, solo quiero cuidarte y hacerte feliz siempre.
+
+                            Y sigo que eres una chica y persona espectacular, que si me pusiera a describir todo lo bonito que se siente
+                            haberte conocido, seria el libro más largo del mundo, porque simplemente me haces sentir bonito, y la plena
+                            eres mi sueño hecho realidad, eres única, autentica, bella, no se tienes algo que simplemente me atrae y me
+                            gusta, y si lo más seguro que estes diciendo que voy rápido y todo, pero yo soy sincero en decir lo que siento y todo, pero la
+                            la idea detras de todo esto es que la pases bien y que te animes con esta cartita/mensajito que escribi con
+                            mucho cariño.
+
+                            Te quiero x10000 veces desde que te conoci 
+                        </p>
+                        <span class="letter-ending" aria-hidden="true">♥</span>
+                    </article>
+                </div>
+                <nav class="screen-navigation" aria-label="Navegación de la historia">
+                    <button
+                        class="pixel-button secondary-button"
+                        type="button"
+                        data-previous
+                    >◀ ANTERIOR</button>
+                    <span class="level-indicator">LEVEL 1/4</span>
+                    <button
+                        class="pixel-button"
+                        type="button"
+                        data-next
+                    >SIGUIENTE ▶</button>
+                </nav>
+            </div>
+        </section>
+        <section
+            id="screen-memories"
+            class="screen"
+            data-screen="2"
+            aria-labelledby="memories-title"
+            hidden
+        >
+            <div class="screen-content">
+                <header class="section-header">
+                    <p class="game-label">MEMORY UNLOCKED</p>
+                    <h2 id="memories-title">Nuestros momentos</h2>
+                    <p class="section-subtitle">Esas llamadas, los juegos, y risas que me divierto</p>
+                </header>
+                <div class="memory-card pixel-panel">
+                    <div class="memory-card-header">
+                        <span>MEMORY LOG #1</span>
+                        <span class="memory-status">SAVED</span>
+                    </div>
+                    <figure class="pixel-frame memory-image">
+                        <img src="assets/images/foto2.png" alt="Una noche que espero que se repita por más noche">
+                    </figure>
+
+                    <div class="memory-text">
+                        <p id="gaming-letter" data-typewriter>
+                            Una noche donde me asinceré contigo, me gusto pasarla viendote jugar, tu compañia es lo que más me gusto
+                            quisiera volver a repetir mas noches junto a ti, perdon si me paso de cursi pero es bonito compartir tiempo
+                            con alguien tan importante, es bonito que aunque sea poco tiempo de conocerte sea más que suficiente para
+                            que veas lo mucho que te aprecio.
+                        </p>
+                    </div>
+                </div>
+                <nav class="screen-navigation" aria-label="Navegación de la historia">
+                    <button
+                        class="pixel-button secondary-button"
+                        type="button"
+                        data-previous
+                    >◀ ANTERIOR</button>
+                    <span class="level-indicator">LEVEL 2/4</span>
+                    <button
+                        class="pixel-button"
+                        type="button"
+                        data-next
+                    >SIGUIENTE ▶</button>
+                </nav>
+            </div>
+        </section>
+        <section
+            id="screen-art"
+            class="screen"
+            data-screen="3"
+            aria-labelledby="art-title"
+            hidden
+        >
+            <div class="screen-content">
+                <header class="section-header">
+                    <p class="game-label">SECRET ITEM FOUND</p>
+                    <h2 id="art-title">También hice algo para ti...</h2>
+                    <p class="section-subtitle"> Quería hacerte un detallito extra</p>
+                </header>
+                <div id="art-introduction" class="reveal-introduction pixel-panel">
+                    <div class="mystery-item" aria-hidden="true">?</div>
+                    <p>Espero te guste</p>
+                    <button id="reveal-button" class="pixel-button" type="button">
+                        ✦ REVEAL ✦
+                    </button>
+                </div>
+                <div id="art-reveal" class="art-reveal" hidden>
+                    <p class="unlock-message">SPECIAL ART UNLOCKED!</p>
+                    <figure class="pixel-frame artwork-frame">
+                        <img src="assets/pixel/tohru.png" alt="Un dibujito pixelart de ti">
+                        <figcaption>Lo hice pensando en ti</figcaption>
+                    </figure>
+                </div>
+                <nav class="screen-navigation" aria-label="Navegación de la historia">
+                    <button
+                        class="pixel-button secondary-button"
+                        type="button"
+                        data-previous
+                    >◀ ANTERIOR</button>
+                    <span class="level-indicator">LEVEL 3/4</span>
+                    <button
+                        class="pixel-button"
+                        type="button"
+                        data-next
+                    >SIGUIENTE ▶</button>
+                </nav>
+            </div>
+        </section>
+        <section
+            id="screen-final"
+            class="screen"
+            data-screen="4"
+            aria-labelledby="final-title"
+            hidden
+        >
+            <div class="screen-content final-content">
+                <p class="game-label">FINAL MESSAGE</p>
+                <div class="pixel-heart final-heart" aria-hidden="true">♥</div>
+                <h2 id="final-title">Feliz cumpleaños, <span data-birthday-name>Torito</span>
+                </h2>
+                <article class="pixel-panel final-message">
+                    <p id="final-letter" data-typewriter>
+                        Espero que te haya gustado esto que lo hice para ti, la verdad no es mucho pero lo hice con todo mi esfuerzo.
+                        Siempre te elegiré no importa lo que pase, yo aqui estaré apoyandote de inicio a fin, hasta donde tu me permitas
+                        Me divierto contigo, me gusta tu compañia, tu presencia, enriquece de felicidad haberte conocido, lo se soy muy
+                        cariñoso y empalagoso asi que sabes lo que te espera jiji... No te quito más tiempo quiero solo tengas un regalito
+                        aunque sea asi, un dibujo o no se pero me puse creativo en esto jiji...
+                    </p>
+                </article>
+                <p class="final-signature">MADE WITH ♥ JUST FOR YOU</p>
+                <div class="final-actions">
+                    <button
+                        id="restart-button"
+                        class="pixel-button secondary-button"
+                        type="button"
+                    >↻ VER DE NUEVO</button>
+                </div>
+                <p class="ending-text">MORE RECENTLY</p>
+            </div>
+        </section>
+    </main>
+    <aside
+        id="music-player"
+        class="music-player"
+        aria-label="Reproductor de Música"
+        hidden
+    >
+        <div class="music-information">
+            <span class="now-playing">NOW PLAYING</span>
+            <span id="song-title" class="song-title">Nombre de la canción</span>
+            <span id="song-counter" class="song-counter">1 / 4</span>
+        </div>
+        <div class="music-controls">
+            <button
+                id="previous-song"
+                class="music-button"
+                type="button"
+                aria-label="Canción anterior"
+            >|◀</button>
+            <button
+                id="play-pause"
+                class="music-button"
+                type="button"
+                aria-label="Pausar o reproducir"
+            >▶</button>
+            <button
+                id="next-song"
+                class="music-button"
+                type="button"
+                aria-label="Siguiente canción"
+            >▶|</button>
+            <label class="volume-control">
+                <span aria-hidden="true">🔊</span>
+                <span class="sr-only">Volumen</span>
+                <input
+                    id="volume-slider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="0.5"
+                    aria-label="Volumen de la música"
+                >
+            </label>
+        </div>
+        <audio id="background-music" preload="metadata"></audio>
+    </aside>
+        <div
+            id="scene-transition"
+            class="scene-transition"
+            aria-hidden="true"    
+        ></div>
+    <img
+        src="assets/images/arthur.png"
+        alt=""
+        class="cowboy-sprite"
+        aria-hidden="true"
+    >
+    <script src="script.js"></script>
+</body>
+</html>
